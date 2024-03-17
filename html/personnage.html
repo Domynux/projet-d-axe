@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personage</title>
+   <link rel="stylesheet" href="../css/personnage.css">
+</head>
+<body id="body" class="light">
+    <header>
+        <h1>Harry the collector </h1>
+    </header>
+    <main>
+        <!-- tabs -->
+        <div id="tabs" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+              <li>
+                <a href="index.html">
+                   <h2>Accueil</h2>
+                </a>
+              </li>
+              <li>
+                <a href="platform.html">
+                  <h2> Plaforme d'achat </h2>
+                </a>
+              </li>
+              <li>
+                <a href="contact.html">
+                  <h2>Contacter-nous</h2>
+                </a>
+            </li>
+            </ul>
+          </div>
+          
+          <a href="#" id="openBtn">
+            <span class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </a>
+    
+    </div>
+
+      <!-- API -->
+      <div id="character">
+    </div>
+   
+    <div class="switchMode">
+        <button onclick= "switchMode()"  id = "lightMode"> activer le mode sombre</button>
+        <button onclick= "switchMode()" id="darkMode" class="display"> activer le mode clair</button>
+
+      </div>
+    </main>
+    <footer>
+        <p id="footerP" class="lightFooter">
+           
+        </p>
+    </footer>
+    <script src="../js/personnage.js"></script>
+</body>
+</html>
+

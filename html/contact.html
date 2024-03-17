@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <!-- css -->
+    
+    <link rel="stylesheet" href="../css/contact.css" />
+  </head>
+  <body id="body" class="light">
+    <header>
+        <h1>Harry the collector </h1>
+    </header>
+    <main>
+        <div id="tabs" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+              <li>
+                <a href="index.html">
+                  <h2>Accueil</h2>
+                </a>
+              </li>
+              <li>
+                <a href="platform.html">
+                <h2> Plaforme d'achat </h2>
+                </a>
+              </li>
+              
+              <li>
+                <a href="contact.html">
+                <h2>Contacter-nous</h2>
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          <a href="#" id="openBtn">
+            <span class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </a>
+    </div>
+      <!-- inscription -->
+      <div class="message-error">
+        <ul></ul>
+    </div>
+    <div class="message-success">
+        Formulaire envoye !
+    </div>
+    <form class="formulaire" method="POST" enctype="multipart/form-data">
+        <div>
+            <label for="pseudo">Pseudo</label>
+            <input type="text" name="pseudo" id="pseudo">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="password2">Entrer a nouveau le mot de passe</label>
+            <input type="password2" name="password2" id="password2">
+        </div>
+
+        <button type="submit" class="inscription" > S'inscrire</button>
+      
+      </div>
+    </main>
+    <footer >
+      <p class="lightFooter">
+        Jeux video crée par la filiale BANDAI NAMCO Entertaiment. ©2020 Valve
+        Corporation. Steam et le logo Steam sont des marques commerciales et/ou
+        des marques déposées de Valve Corporation aux États-Unis et/ou dans
+        d'autres pays. Microsoft, la marque Xbox Sphere, le logo Xbox One, le
+        logo Series X|S, Xbox One, Xbox Series X, Xbox Series S, Xbox Series X|S
+        et Xbox Game Pass sont des marques commerciales du groupe de sociétés
+        Microsoft. "PlayStation" « PS4 » et « PS5 » sont des marques déposées ou
+        des marques commerciales de Sony Interactive Entertainment Inc
+      </p>
+    </footer>
+    <!--js-->
+
+    <script src="../js/contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,288 @@
+img {
+    width: 120%;
+}
+
+header{
+    display: flex;
+     align-items: center;
+     justify-content: center; 
+     min-height: 20vh;  
+}
+
+h1{
+    display: flex;
+     background-color: rgba(220, 20, 60, 0.3);
+     align-items: center;
+     justify-content: center;
+     min-height: 10vh ;
+     min-width: 30vw;
+     max-width: 40vw;
+     max-height: 20vh;
+     border-radius: 10px;
+ }
+
+/*-- tabs --*/
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+ 
+  }
+  
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+
+  }
+  
+  .sidenav a:hover {
+    color: #111;
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidenav.active {
+    left: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+  
+
+
+
+.text {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 20%;
+    width: 29vw;
+    border-radius: 5px;
+    background-color: black;
+    color: #e8e8e8;
+    
+}
+
+
+.texte {
+    display: flex;
+    width: 29vw;
+    height: 10vh; 
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    color: #e8e8e8;
+    font-size: 100%;
+}
+
+.gryffindor{
+
+    background-color: rgb(255, 68, 0);
+    color: goldenrod;
+    border-color: rgb(230, 158, 63);
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 10px;
+    
+    
+}
+.slytherin{
+
+    background-color: rgb(39, 103, 0);
+    color: silver;
+    border-color: rgb(108, 63, 3);
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 10px;
+    
+}
+.ravenclaw{
+    background-color: rgb(0, 72, 255);
+    color: rgb(247, 181, 16);
+    border-color: rgb(108, 63, 3);
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 10px;
+}
+.hufflepuff{
+
+    background-color: goldenrod;
+    color: black;
+    border-color: rgb(108, 63, 3);
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 10px;
+
+}
+.noHouse{
+
+    background-color: rgb(37, 37, 37);
+    color: rgb(91, 91, 91);
+    border-color: rgb(108, 63, 3);
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 10px;
+}
+
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#characters{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.character {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+
+
+.accueil{
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 20vw;
+    max-height: 20vh;
+   
+}
+
+.achat{
+ 
+    background-repeat: no-repeat;
+    max-width: 20vw;
+    max-height: 20vh;
+   
+}
+
+.contact{
+
+
+    background-size: cover;
+    max-width: 30vw;
+    max-height: 30vh;
+   
+}
+/*-- dark mode --*/
+
+.light{
+    background-image: url("../image/harry_potter_ligth.jpg");
+    background-size: contain ;
+    background-repeat: repeat;
+    background-color: lightgrey;
+}
+
+.dark{
+    
+        background-image: url("../image/harry_potter_night.webp");
+        background-size: contain ;
+        background-repeat: repeat;
+         background-color: rgb(141, 32, 35);
+   
+}
+
+#lightMode{
+   background-color: black;
+   color: aliceblue;
+}
+
+#darkMode{
+   background-color: aliceblue;
+}
+.switchMode {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.display {
+    display: none;
+}
+.lightFooter{
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
+    align-content: flex-end;
+}
+
+.darkFooter{
+    display: flex;
+    align-content: flex-end;
+    background-color: rgb(135, 0, 0);
+    border-radius: 10px;
+
+}
+
+/* responsive */
+
+@media screen and (max-width: 1024px){
+    body{
+        background-image: url(../image/harry_potter_ligth.jpg);
+        background-size: cover ;
+        background-repeat: no-repeat;
+        background-color: lightgrey;
+    }
+    h1{
+        display: flex;
+        background-color: lightgrey;
+        align-items: center;
+        justify-content: center;
+        min-height: 10vh ;
+        min-width: 30vw;
+        max-width: 40vw;
+        max-height: 20vh;
+    }
+}
+   
+@media (max-width:980px){
+    body{
+        background-image: url(../image/harry_potter_ligth.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+         background-color: lightgrey;
+        }
+   
+}
+@media (max-width:480px){
+    body{
+        background-image: url(../image/harry_potter_ligth.jpg);
+        background-size: cover ;
+        background-repeat: no-repeat;
+         background-color: lightgrey;
+        }
+}

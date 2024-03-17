@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>platforme d'achat</title>
+    <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/platform.css" />
+  </head>
+  <body id="body" class="light">
+    <header>
+      <h1>Harry the collector </h1>
+    </header>
+    <main>
+
+       <!-- tabs -->
+      
+       <div id="tabs" class="sidenav">
+        <a id="closeBtn" href="#" class="close">×</a>
+        <ul>
+          <li><a href="index.html"> 
+
+            <h2>Accueil</h2></a></li>
+
+          <li>
+            <a href="platform.html">
+            <h2> Plaforme d'achat </h2>
+          </a>
+        </li>
+          <li><a href="contact.html">
+            <h2>Contacter-nous</h2>
+          </a></li>
+        </ul>
+      </div>
+      
+      <a href="#" id="openBtn">
+        <span class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
+</div>
+
+      <!-- swiper -->
+      
+      <div class="swiper platform-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide-1">
+            <div class="steam">
+                <div class = "logo logoSteam">
+                    <h3>Steam</h3>
+                </div>                
+            </div>
+            
+          </div>
+          <div class="swiper-slide slide-2">
+            <div class="xbox">
+                <div class="logo logoXbox">
+                    <h3>Xbox</h3>
+                </div>
+                
+            </div>
+            
+          </div>
+          <div class="swiper-slide slide-3">
+            <div class="playstation">
+                <div class="logo logoPlaystation">
+            
+                    <h3>Playstation</h3>
+                
+                </div>
+
+                
+            </div>
+            
+          </div>
+          <div class="swiper-slide slide-4">
+            
+
+            <div class="instantGaming">
+                <div class="logo logoInstantGaming">
+                    <h3>Instant gaming</h3>
+            </div>
+                
+        </div>
+            
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!--dark mode -->
+      <div class="switchMode">
+        <button onclick= "switchMode()"  id = "lightMode"> activer le mode sombre</button>
+        <button onclick= "switchMode()" id="darkMode" class="display"> activer le mode clair</button>
+
+      </div>
+    </main>
+    <footer>
+      <p id="footerP" class="lightFooter">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Laboriosam dolor vel consequuntur dolore tenetur, 
+        culpa soluta assumenda suscipit nemo laborum laudantium quam quas officia,
+        labore at est enim itaque! Reiciendis?
+      </p>
+    </footer>
+    <!--js-->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../js/platform.js"></script>
+  </body>
+</html>

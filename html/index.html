@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>liste des personnage</title>
+    <link rel="stylesheet" href="../css/liste_personnages.css">
+</head>
+<body id="body" class="light">
+    <header>
+        <h1>Harry the collector </h1>
+    </header>
+    <main>
+        <div id="tabs" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+              <li><a href="index.html"> 
+                <h2>Accueil</h2></a></li>
+              <li><a href="platform.html">
+                <h2> Plaforme d'achat </h2>
+            </a></li>
+              <li>
+                <a href="contact.html">
+                <h2>Contacter-nous</h2>
+              </a></li>
+            </ul>
+          </div>
+          
+          <a href="#" id="openBtn">
+            <span class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </a>
+    </div>
+    <!-- API -->
+    
+      <div id="characters" class="liste">
+     </div>
+    
+
+    <div class="switchMode">
+        <button onclick= "switchMode()"  id = "lightMode"> activer le mode sombre</button>
+        <button onclick= "switchMode()" id="darkMode" class="display"> activer le mode clair</button>
+
+      </div>
+    </main>
+    <footer>
+        <p id="footerP" class="lightFooter">
+            Jeux video crée par la filiale BANDAI NAMCO Entertaiment.
+            ©2020 Valve Corporation. Steam et le logo Steam sont des marques commerciales et/ou des marques déposées de Valve Corporation aux
+             États-Unis et/ou dans d'autres pays.
+            Microsoft, la marque Xbox Sphere, le logo Xbox One, le logo Series X|S, Xbox One, 
+            Xbox Series X, Xbox Series S, Xbox Series X|S et Xbox Game Pass sont des marques commerciales du groupe de sociétés Microsoft.
+            "PlayStation" « PS4 » et « PS5 » sont des marques déposées ou des marques commerciales de Sony Interactive Entertainment Inc.
+        </p>
+    </footer>
+    <script src="../js/liste_personnages.js"></script>
+</body>
+</html>
