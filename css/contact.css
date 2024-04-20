@@ -121,7 +121,7 @@ input{
     width: 40%;
 }
 
-.formulaire{
+#formulaire{
 background-color: rgba(0, 0, 0, 0.5);
 border: 10px solid orange;
 border-radius: 10px;
