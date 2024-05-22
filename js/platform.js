@@ -43,7 +43,7 @@ function switchMode(){
 
 
 }
-
+/*-- pack ouverture --*/
 
 /*-- tabs--*/
 

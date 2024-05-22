@@ -1,228 +1,202 @@
-header{
-    display: flex;
-     align-items: center;
-     justify-content: center; 
-     min-height: 20vh;  
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
 }
 
-h1{
-    display: flex;
-     background-color: rgba(220, 20, 60, 0.3);
-     align-items: center;
-     justify-content: center;
-     min-height: 10vh ;
-     min-width: 30vw;
-     max-width: 40vw;
-     max-height: 20vh;
-     border-radius: 10px;
- }
+h1 {
+  display: flex;
+  background-color: rgba(220, 20, 60, 0.3);
+  align-items: center;
+  justify-content: center;
+  min-height: 10vh;
+  min-width: 30vw;
+  max-width: 40vw;
+  max-height: 20vh;
+  border-radius: 10px;
+}
 /*-- tabs --*/
 
 .sidenav {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: -250px;
-    background-color: #e8e8e8;
-    padding-top: 60px;
- 
-  }
-  
-
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-
-  }
-  
-  .sidenav a:hover {
-    color: #111;
-  }
-  
-  .sidenav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidenav.active {
-    left: 0;
-  }
-  
-  /* Close btn */
-  .sidenav .close {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-  }
-
-  .burger-icon span {
-    display: block;
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-  }
-
-
-
-h3{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    width: 80vw;
-    height: 12vh;
-    color: rgb(255, 255, 255);
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: -250px;
+  background-color: #e8e8e8;
+  padding-top: 60px;
 }
 
-
-
-.logo{
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 60%;
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
 }
 
-.logoSteam{
-    background-image: url("../image/platformlogo/steamlogo.png");
-    
+.sidenav a:hover {
+  color: #111;
 }
 
-.logoXbox{
-    background-image: url("../image/platformlogo/xboxlogo.png");
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.logoPlaystation{
-    background-image: url("../image/platformlogo/playstationlogo.png");
-}
-.logoInstantGaming{
-    background-image: url("../image/platformlogo/instantgaminglogo.png");
+.sidenav.active {
+  left: 0;
 }
 
+/* Close btn */
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.burger-icon span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 12vh;
+  color: rgb(255, 255, 255);
+}
+
+.packGriffondor {
+  background-color: orange;
+  border-radius: 10px;
+}
+.packSerdaigle {
+  background-color: rgb(0, 0, 114);
+  border-radius: 10px;
+}
+.packSerpentar {
+  background-color: green;
+  border-radius: 10px;
+}
+.packPoufsouffle {
+  background-color: rgb(174, 174, 0);
+  border-radius: 10px;
+}
 
 /* swiper */
 
-.swiper-slide{
-    height: 50vh;
-    
+.swiper-slide {
+  height: 50vh;
 }
 
-.swiper-slide{
-    text-align: center;
-    font-size: 18px;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgb(0, 0, 0 , 0.5);
-    border-radius: 10px;
-    border: solid 5px orange;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: solid 5px orange;
 }
 
-
-body .swiper-pagination-bullet{
-    width: 18px;
-    height: 18px;
+body .swiper-pagination-bullet {
+  width: 18px;
+  height: 18px;
 }
-
-
-
-
-
 
 /* dark mode */
 
-.light{
-    background-image: url("../image/harry_potter_ligth.jpg");
-    background-size: contain ;
-    background-repeat: repeat;
-    background-color: lightgrey;
+.light {
+  background-image: url("../image/harry_potter_ligth.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  background-color: lightgrey;
 }
 
-.dark{
-    
-        background-image: url("../image/harry_potter_night.webp");
-        background-size: contain ;
-        background-repeat: repeat;
-         background-color: rgb(141, 32, 35);
-   
+.dark {
+  background-image: url("../image/harry_potter_night.webp");
+  background-size: contain;
+  background-repeat: repeat;
+  background-color: rgb(141, 32, 35);
 }
 
-#lightMode{
-   background-color: black;
-   color: aliceblue;
+#lightMode {
+  background-color: black;
+  color: aliceblue;
 }
 
-#darkMode{
-   background-color: aliceblue;
+#darkMode {
+  background-color: aliceblue;
 }
 .switchMode {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .display {
-    display: none;
+  display: none;
 }
-.lightFooter{
-    display: flex;
-    background-color: black;
-    color: aliceblue;
-    border-radius: 10px;
-    align-content: flex-end;
+.lightFooter {
+  display: flex;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 10px;
+  align-content: flex-end;
 }
 
-.darkFooter{
-    display: flex;
-    align-content: flex-end;
-    background-color: rgb(135, 0, 0);
-    border-radius: 10px;
-
+.darkFooter {
+  display: flex;
+  align-content: flex-end;
+  background-color: rgb(135, 0, 0);
+  border-radius: 10px;
 }
 /* responsive */
 
-@media screen and (max-width: 1024px){
-    body{
-        background-image: url(../image/harry_potter_ligth.jpg);
-        background-size: cover ;
-        background-repeat: no-repeat;
-        background-color: lightgrey;
-    }
-    h1{
-        display: flex;
-        background-color: lightgrey;
-        align-items: center;
-        justify-content: center;
-        min-height: 10vh ;
-        min-width: 30vw;
-        max-width: 40vw;
-        max-height: 20vh;
-    }
+@media screen and (max-width: 1024px) {
+  body {
+    background-image: url(../image/harry_potter_ligth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: lightgrey;
+  }
+  h1 {
+    display: flex;
+    background-color: lightgrey;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    min-width: 30vw;
+    max-width: 40vw;
+    max-height: 20vh;
+  }
 }
-   
-@media (max-width:980px){
-    body{
-        background-image: url(../image/harry_potter_ligth.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-         background-color: lightgrey;
-        }
-   
+
+@media (max-width: 980px) {
+  body {
+    background-image: url(../image/harry_potter_ligth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: lightgrey;
+  }
 }
-@media (max-width:480px){
-    body{
-        background-image: url(../image/harry_potter_ligth.jpg);
-        background-size: cover ;
-        background-repeat: no-repeat;
-         background-color: lightgrey;
-        }
+@media (max-width: 480px) {
+  body {
+    background-image: url(../image/harry_potter_ligth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: lightgrey;
+  }
 }

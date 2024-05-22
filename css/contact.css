@@ -1,260 +1,246 @@
 img {
-    width: 120%;
+  width: 120%;
 }
 
-header{
-    display: flex;
-     align-items: center;
-     justify-content: center; 
-     min-height: 20vh;  
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
 }
-h1{
-    display: flex;
-     background-color: rgba(220, 20, 60, 0.3);
-     align-items: center;
-     justify-content: center;
-     min-height: 10vh ;
-     min-width: 30vw;
-     max-width: 40vw;
-     max-height: 20vh;
-     border-radius: 10px;
- }
+h1 {
+  display: flex;
+  background-color: rgba(220, 20, 60, 0.3);
+  align-items: center;
+  justify-content: center;
+  min-height: 10vh;
+  min-width: 30vw;
+  max-width: 40vw;
+  max-height: 20vh;
+  border-radius: 10px;
+}
 /*-- tabs --*/
 
 .sidenav {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: -250px;
-    background-color: #e8e8e8;
-    padding-top: 60px;
- 
-  }
-  
-
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-
-  }
-  
-  .sidenav a:hover {
-    color: #111;
-  }
-  
-  .sidenav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidenav.active {
-    left: 0;
-  }
-  
-  /* Close btn */
-  .sidenav .close {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-  }
-
-  .burger-icon span {
-    display: block;
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-  }
-  
-
-
-
-#text {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    height: 20%;
-    border-radius: 5px;
-    background-color: black;
-    color: #e8e8e8;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -250px;
+  background-color: #e8e8e8;
+  padding-top: 60px;
 }
 
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
 
-h3{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    width: 80vw;
-    height: 12vh;
-    color: black;
+.sidenav a:hover {
+  color: #111;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav.active {
+  left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.burger-icon span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+#text {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  height: 20%;
+  border-radius: 5px;
+  background-color: black;
+  color: #e8e8e8;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 80vw;
+  height: 12vh;
+  color: black;
 }
 
 /* inscription */
 
-
-form{
-    border: 20x solid rgba(153, 153n, 153, 0.6);
-    text-align: center;
-    width: 80%;
-    margin: 10%;
+form {
+  border: 20x solid rgba(153, 153n, 153, 0.6);
+  text-align: center;
+  width: 80%;
+  margin: 10%;
 }
 
 form > div {
-    margin: 30px 20px;
+  margin: 30px 20px;
 }
 
-label{
-    display: block;
-    margin-bottom: 8px;
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: aliceblue;
 }
 
-input{
-    height: 20px;
-    width: 40%;
+input {
+  height: 20px;
+  width: 40%;
 }
 
-#formulaire{
-background-color: rgba(0, 0, 0, 0.5);
-border: 10px solid orange;
-border-radius: 10px;
+#formulaire {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 10px solid orange;
+  border-radius: 10px;
 }
 
 .inscription {
-    margin-left : 20px;
-    margin-bottom: 30px;
-    padding: 10px 32px;
-    cursor: pointer;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  padding: 10px 32px;
+  cursor: pointer;
 }
 
 .message-error {
-
-    border: 5px solid rgba(212, 42, 0, 1);
-    color: rgb(147, 0, 0);
-    background-color: rgb(0, 0, 0, 0.5);
-    padding: 16px 32px;
-    margin-left: 25%;
-    margin-right: 25%;
-    display: none;
-    border-radius: 5px;
+  border: 5px solid rgba(212, 42, 0, 1);
+  color: rgb(147, 0, 0);
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 16px 32px;
+  margin-left: 25%;
+  margin-right: 25%;
+  display: none;
+  border-radius: 5px;
 }
 
 .message-success {
-
-    border: 5px solid rgb(81, 150, 2) ;
-    color: rgb(81, 150, 2);
-    background-color: rgb(0, 0, 0 , 0.5);
-    padding: 16px 32px;
-    margin-left: 25%;
-    margin-right: 25%;
-    display: none;
-    border-radius: 5px;
+  border: 5px solid rgb(81, 150, 2);
+  color: rgb(81, 150, 2);
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 16px 32px;
+  margin-left: 25%;
+  margin-right: 25%;
+  display: none;
+  border-radius: 5px;
 }
 
-.visible{
-    display: block;
+.visible {
+  display: block;
 }
 
-.invalide{
-    background-color: rgb(132, 0, 0);
+.invalide {
+  background-color: rgb(132, 0, 0);
 }
 
-.success{
-    border: 1px solid rgb(81, 150, 2);
-    background-color: rgb(11, 205, 24);
+.success {
+  border: 1px solid rgb(81, 150, 2);
+  background-color: rgb(11, 205, 24);
 }
 
-
-.light{
-    background-image: url("../image/harry_potter_ligth.jpg");
-    background-size: contain ;
-    background-repeat: repeat;
-    background-color: lightgrey;
+.light {
+  background-image: url("../image/harry_potter_ligth.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  background-color: lightgrey;
 }
 
-.dark{
-    
-        background-image: url("../image/harry_potter_night.webp");
-        background-size: contain ;
-        background-repeat: repeat;
-         background-color: rgb(141, 32, 35);
-   
+.dark {
+  background-image: url("../image/harry_potter_night.webp");
+  background-size: contain;
+  background-repeat: repeat;
+  background-color: rgb(141, 32, 35);
 }
 
-#lightMode{
-   background-color: black;
-   color: aliceblue;
+#lightMode {
+  background-color: black;
+  color: aliceblue;
 }
 
-#darkMode{
-   background-color: aliceblue;
+#darkMode {
+  background-color: aliceblue;
 }
 .switchMode {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .display {
-    display: none;
+  display: none;
 }
-.lightFooter{
-    display: flex;
-    background-color: black;
-    color: aliceblue;
-    border-radius: 10px;
-    align-content: flex-end;
+.lightFooter {
+  display: flex;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 10px;
+  align-content: flex-end;
 }
 
-.darkFooter{
-    display: flex;
-    align-content: flex-end;
-    background-color: rgb(135, 0, 0);
-    border-radius: 10px;
-
+.darkFooter {
+  display: flex;
+  align-content: flex-end;
+  background-color: rgb(135, 0, 0);
+  border-radius: 10px;
 }
 
 /* responsive */
 
-@media screen and (max-width: 1024px){
-    body{
-        background-image: url(../image/harry_potter_ligth.jpg);
-        background-size: cover ;
-        background-repeat: no-repeat;
-        background-color: lightgrey;
-    }
-    h1{
-        display: flex;
-        background-color: lightgrey;
-        align-items: center;
-        justify-content: center;
-        min-height: 10vh ;
-        min-width: 30vw;
-        max-width: 40vw;
-        max-height: 20vh;
-    }
+@media screen and (max-width: 1024px) {
+  body {
+    background-image: url(../image/harry_potter_ligth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: lightgrey;
+  }
+  h1 {
+    display: flex;
+    background-color: lightgrey;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    min-width: 30vw;
+    max-width: 40vw;
+    max-height: 20vh;
+  }
 }
-   
-@media (max-width:980px){
-    body{
-        background-image: url(../image/harry_potter_ligth.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-         background-color: lightgrey;
-        }
-   
+
+@media (max-width: 980px) {
+  body {
+    background-image: url(../image/harry_potter_ligth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: lightgrey;
+  }
 }
-@media (max-width:480px){
-    body{
-        background-image: url(../image/harry_potter_ligth.jpg);
-        background-size: cover ;
-        background-repeat: no-repeat;
-         background-color: lightgrey;
-        }
+@media (max-width: 480px) {
+  body {
+    background-image: url(../image/harry_potter_ligth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: lightgrey;
+  }
 }

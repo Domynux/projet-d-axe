@@ -1,32 +1,25 @@
-let ligth =document.querySelector('.light')
-function switchMode(){
+let ligth = document.querySelector(".light");
+function switchMode() {
+  let footercolor = document.querySelector("#footerP");
+  let darkMode = document.querySelector("#darkMode");
+  let lightMode = document.querySelector("#lightMode");
+  let bodyColor = document.querySelector("#body");
 
-    let footercolor = document.querySelector('#footerP')
-    let darkMode = document.querySelector('#darkMode')
-    let lightMode = document.querySelector('#lightMode')
-    let bodyColor = document.querySelector('#body')
-
-    if(darkMode.classList.contains('display')){
-        
-        lightMode.classList.add('display')
-        darkMode.classList.remove('display')
-        bodyColor.classList.add('dark')
-        bodyColor.classList.remove('light')
-        footercolor.classList.add('darkFooter')
-        footercolor.classList.remove('lightFooter')
-        
-       
-
-    } else{ 
-        lightMode.classList.remove('display')
-        darkMode.classList.add('display')
-        bodyColor.classList.remove('dark')
-        bodyColor.classList.add('light')
-        footercolor.classList.add('lightFooter')
-        footercolor.classList.remove('darkFooter')
-    }
-
-
+  if (darkMode.classList.contains("display")) {
+    lightMode.classList.add("display");
+    darkMode.classList.remove("display");
+    bodyColor.classList.add("dark");
+    bodyColor.classList.remove("light");
+    footercolor.classList.add("darkFooter");
+    footercolor.classList.remove("lightFooter");
+  } else {
+    lightMode.classList.remove("display");
+    darkMode.classList.add("display");
+    bodyColor.classList.remove("dark");
+    bodyColor.classList.add("light");
+    footercolor.classList.add("lightFooter");
+    footercolor.classList.remove("darkFooter");
+  }
 }
 /*-- tabs--*/
 
@@ -49,16 +42,16 @@ function closeNav() {
 
 /*-- carte --*/
 
-function fetchCharacters(){
-  return fetch('https://hp-api.lainocs.fr/characters')
-  .then ((response) => response.json())
-
+function fetchCharacters() {
+  return fetch("https://hp-api.lainocs.fr/characters").then((response) =>
+    response.json()
+  );
 }
 
-async function displayCharacters(){
-  const data = await fetchCharacters()
-  data.forEach(character => {
-      document.querySelector('#characters').innerHTML += `
+async function displayCharacters() {
+  const data = await fetchCharacters();
+  data.forEach((character) => {
+    document.querySelector("#characters").innerHTML += `
       <div class='character' id="perso">
          <a href="personnage.html?slug=${character.slug}">
            <div class =" text">
@@ -68,24 +61,19 @@ async function displayCharacters(){
            </div>
          </a>
       
-      `
-  });
-  
-let element = document.getElementById ('house')
- let colorBack = document.querySelector('.character')
+      `;
+    let element = document.getElementById("house");
+    let colorBack = document.querySelector(".character");
 
-  if(characters.house == "Gryffindor"){
-    colorBack.classList.add('gryffindor')
-  } 
-  else if (characters.house =="Slytherin") {
-    colorBack.classList.add('slytherin')
-  }
-  else if (characters.house =="Ravenclaw") {
-    colorBack.classList.add('ravenclaw')
-  }
-  else if (characters.house =="Hufflepuff") {
-    colorBack.classList.add('hufflepuff')
-  }
-  
+    if (characters.house == "Gryffindor") {
+      colorBack.classList.add("gryffindor");
+    } else if (characters.house == "Slytherin") {
+      colorBack.classList.add("slytherin");
+    } else if (characters.house == "Ravenclaw") {
+      colorBack.classList.add("ravenclaw");
+    } else if (characters.house == "Hufflepuff") {
+      colorBack.classList.add("hufflepuff");
+    }
+  });
 }
-displayCharacters()
+displayCharacters();
